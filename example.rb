@@ -135,3 +135,16 @@ juanito.carrera=('Ing. Comercial')
 juanito.carrera =('Ing. Comercial')
 juanito.carrera = 'Ing. Comercial'
 
+###################################
+# Bloques
+
+n = 10
+n.times do
+  p "esto se repetirá #{n} veces"
+end
+
+5.times { |i| puts i }
+
+[1, 2, 3].reduce { |s, m| s + m }
+
+#################################
