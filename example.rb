@@ -51,3 +51,24 @@ juan.instance_of? Persona
 # => false
 juan.instance_of? Hombre
 # => true
+
+# Definicion de la Clase
+class Chileno < Persona
+  attr_accessor :id
+  attr_reader :nombre
+
+  def self.new_id
+    rand 1000
+  end
+
+  # metodo inicializar
+  def initialize(nombre = nil)
+    self.id = Chileno.new_id
+    super nombre || "NONAME#{id}"
+  end
+end
+
+daniel = Chileno.new('Daniel')
+# => #<Chileno:0x007ff4c2163280 @nombre="Daniel", @id=151>
+puts daniel.id
+puts daniel.nombre
