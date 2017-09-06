@@ -148,3 +148,17 @@ end
 [1, 2, 3].reduce { |s, m| s + m }
 
 #################################
+
+def times
+  result = yield(1, 100)
+  p result
+end
+
+times do |num_one, num_two|
+  puts "#{num_one} #{num_two}"
+  # operar los dos numeros
+  num_one + num_two
+end
+
+bloque = lambda { |i| puts i }
+bloque.call 'parametro'
