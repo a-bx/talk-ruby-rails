@@ -9,6 +9,13 @@
 # Todo Todo es un Objeto
 nil.nil?
 
+# String	    '   "	      "mi string"
+# Simbolo	    :	          :symbol
+# Array	      [ ]	        [1, 2, 3, 4, 5]
+# Hash	      { }	        { key: 'value', other_key: 1234 }
+# Rango	      ..          1..7
+# Regex	      /	          /([0-9]+)/
+
 ########################################################################
 
 # Definicion de la Clase
@@ -72,3 +79,28 @@ daniel = Chileno.new('Daniel')
 # => #<Chileno:0x007ff4c2163280 @nombre="Daniel", @id=151>
 puts daniel.id
 puts daniel.nombre
+
+# Permite jugar
+module Jugador
+  def jugar!
+    p 'Jugando'
+    @jugando = true
+  end
+
+  def jugando?
+    @jugando || false
+  end
+
+  def descansar
+    @jugando = false
+  end
+end
+
+# Definicion de la Clase
+class Futbolista < Chileno
+  include Jugador
+end
+
+alexis = Futbolista.new('Alexis')
+alexis.jugando?
+alexis.jugar!
