@@ -104,3 +104,34 @@ end
 alexis = Futbolista.new('Alexis')
 alexis.jugando?
 alexis.jugar!
+
+class Estudiante < Chileno
+  attr_reader :carrera
+
+  def initialize(nombre, carrera)
+    super nombre
+    @carrera = carrera
+  end
+end
+
+juanito = Estudiante.new('Juanito', 'ing. en computacion')
+juanito.carrera
+# Escribe un setter
+
+class Estudiante < Chileno
+  attr_reader :carrera
+
+  def initialize(nombre, carrera)
+    super nombre
+    @carrera = carrera
+  end
+
+  def carrera=(value)
+    @carrera = value
+  end
+end
+juanito.carrera
+juanito.carrera=('Ing. Comercial')
+juanito.carrera =('Ing. Comercial')
+juanito.carrera = 'Ing. Comercial'
+
