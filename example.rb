@@ -40,4 +40,14 @@ def conversar(person_one, person_two)
   person_two.hablar
 end
 
-conversar Hombre.new('Juan'), Persona.new('Pedro')
+juan = Hombre.new('Juan')
+pedro = Persona.new('Pedro')
+conversar juan, pedro
+
+juan.respond_to? :hablar
+# => true
+
+juan.instance_of? Persona
+# => false
+juan.instance_of? Hombre
+# => true
