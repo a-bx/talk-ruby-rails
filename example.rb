@@ -23,6 +23,9 @@ class Persona
   end
 end
 
+pedro = Persona.new('Pedro')
+pedro.hablar
+
 # Class es un Objeto 💥💥💥💥
 Hombre = Class.new Persona
 yo = Hombre.new
@@ -30,3 +33,11 @@ yo.hablar
 # => Hola soy NONAME001
 Hombre.ancestors
 # => [Hombre, Persona, Object, Kernel, BasicObject]
+
+# Interfaces?
+def conversar(person_one, person_two)
+  person_one.hablar
+  person_two.hablar
+end
+
+conversar Hombre.new('Juan'), Persona.new('Pedro')
