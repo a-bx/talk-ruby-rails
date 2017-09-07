@@ -8,7 +8,7 @@ http://slides.com/abrahambarrera/ruby-rails
 
 - `respuestas.md` estarán las respuestas a sus preguntas
 
-#### Recursos
+#### Recursos
 
 * Manual interactivo: http://tryruby.org/
 * Tutorial muy completo: http://rubytutorial.wikidot.com/
