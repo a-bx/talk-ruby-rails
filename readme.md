@@ -7,3 +7,11 @@ Slides:
 http://slides.com/abrahambarrera/ruby-rails
 
 - `respuestas.md` estarán las respuestas a sus preguntas
+
+#### Recursos
+
+* Manual interactivo: http://tryruby.org/
+* Tutorial muy completo: http://rubytutorial.wikidot.com/
+
+* Directorio de gemas organizado: https://www.ruby-toolbox.com/
+* Directorio de gemas: https://rubygems.org
